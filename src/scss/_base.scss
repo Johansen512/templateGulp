@@ -1,0 +1,26 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: rgb(119, 85, 11);
+
+@mixin disco{
+    /*border: groove red 0.7rem;*/
+    color: rgb(201, 240, 199);
+    background-color: rgb(197, 88, 88)
+    
+    
+    }
+
+@mixin snyrbel ($radius){
+    border-radius: $radius;
+    background-color: rgb(167, 55, 55);
+    font-size:3rem;
+    
+}
+
+
+@mixin mediaQ ($breakpoint){
+    @media screen and (max-width:$breakpoint) {
+        @content
+    }
+}
+
+
